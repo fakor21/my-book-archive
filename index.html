@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+                <span>My Book Archive</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#ngo-guides" class="nav-link">NGO Guides</a></li>
+                <li><a href="#summary-books" class="nav-link">Summaries</a></li>
+                <li><a href="#manuals" class="nav-link">Manuals</a></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a href="https://github.com/ewazfakor" class="nav-link github-link" target="_blank" rel="noopener noreferrer">
+                        <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        Github
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Digital Library Collection</p>
+            <h1 class="hero-title">My Book Archive</h1>
+            <p class="hero-subtitle">A curated collection of NGO guides, book summaries, and instructional manuals — freely shared as downloadable PDF resources.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="9">0</span>
+                    <span class="stat-label">Books</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">Free Access</span>
+                </div>
+            </div>
+            <a href="#ngo-guides" class="hero-cta">
+                Explore Collection
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- NGO Guide Books Section -->
+        <section class="book-section" id="ngo-guides">
+            <div class="section-header">
+                <div class="section-icon ngo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/>
+                    </svg>
+                </div>
+                <div class="section-title-group">
+                    <h2 class="section-title">NGO Guide Books</h2>
+                    <p class="section-desc">Practical guides for non-governmental organizations covering operations, funding, compliance, and fieldwork strategies.</p>
+                </div>
+            </div>
+            <div class="books-grid">
+                <article class="book-card" data-category="ngo">
+                    <div class="book-cover ngo-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">NGO Guide</span>
+                            <h3 class="book-cover-title">NGO Operations Handbook</h3>
+                            <p class="book-cover-subtitle">A Comprehensive Field Guide</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">NGO Operations Handbook</h3>
+                        <p class="book-description">A step-by-step guide to setting up and running an NGO, from legal registration to program implementation and volunteer management.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                142 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/guide/ngo_operations_handbook.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="ngo">
+                    <div class="book-cover ngo-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">NGO Guide</span>
+                            <h3 class="book-cover-title">Grant Writing & Fundraising</h3>
+                            <p class="book-cover-subtitle">Securing Resources for Impact</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Grant Writing & Fundraising</h3>
+                        <p class="book-description">Master the art of proposal writing, donor relations, and sustainable fundraising strategies for social impact organizations.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                98 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/guide/grant_writing_fundraising.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="ngo">
+                    <div class="book-cover ngo-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">NGO Guide</span>
+                            <h3 class="book-cover-title">NGO Compliance & Governance</h3>
+                            <p class="book-cover-subtitle">Legal Frameworks & Best Practices</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">NGO Compliance & Governance</h3>
+                        <p class="book-description">Navigate legal requirements, board governance, transparency standards, and reporting obligations for NGOs worldwide.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                115 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/guide/ngo_compliance_governance.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Summary Books Section -->
+        <section class="book-section" id="summary-books">
+            <div class="section-header">
+                <div class="section-icon summary-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                    </svg>
+                </div>
+                <div class="section-title-group">
+                    <h2 class="section-title">Summary Books</h2>
+                    <p class="section-desc">Concise distillations of key ideas, frameworks, and insights from influential works across leadership, development, and social change.</p>
+                </div>
+            </div>
+            <div class="books-grid">
+                <article class="book-card" data-category="summary">
+                    <div class="book-cover summary-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">Summary</span>
+                            <h3 class="book-cover-title">Leading Change</h3>
+                            <p class="book-cover-subtitle">John P. Kotter — Key Insights</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Leading Change — Summary</h3>
+                        <p class="book-description">A condensed summary of Kotter's eight-step change model with practical applications for organizational transformation and leadership.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                45 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/summaries/leading_change_summary.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="summary">
+                    <div class="book-cover summary-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">Summary</span>
+                            <h3 class="book-cover-title">The Lean Startup</h3>
+                            <p class="book-cover-subtitle">Eric Ries — Core Concepts</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Lean Startup — Summary</h3>
+                        <p class="book-description">Key lessons on build-measure-learn loops, validated learning, and iterative product development for social enterprises and startups.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                38 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/summaries/lean_startup_summary.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="summary">
+                    <div class="book-cover summary-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">Summary</span>
+                            <h3 class="book-cover-title">Thinking, Fast and Slow</h3>
+                            <p class="book-cover-subtitle">Daniel Kahneman — Key Takeaways</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Thinking, Fast and Slow — Summary</h3>
+                        <p class="book-description">A curated summary of behavioral economics insights on decision-making biases, heuristics, and human judgment for leaders and planners.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                52 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/summaries/thinking_fast_slow_summary.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Manuals Section -->
+        <section class="book-section" id="manuals">
+            <div class="section-header">
+                <div class="section-icon manual-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+                <div class="section-title-group">
+                    <h2 class="section-title">Instructional Manuals</h2>
+                    <p class="section-desc">Step-by-step manuals and reference documents for tools, processes, and methodologies used in development and organizational work.</p>
+                </div>
+            </div>
+            <div class="books-grid">
+                <article class="book-card" data-category="manual">
+                    <div class="book-cover manual-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">Manual</span>
+                            <h3 class="book-cover-title">M&E Framework Manual</h3>
+                            <p class="book-cover-subtitle">Monitoring & Evaluation Guide</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">M&E Framework Manual</h3>
+                        <p class="book-description">A comprehensive manual for designing monitoring and evaluation systems, including indicator frameworks, data collection tools, and reporting templates.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                128 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/manuals/me_framework_manual.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="manual">
+                    <div class="book-cover manual-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">Manual</span>
+                            <h3 class="book-cover-title">Data Collection Toolkit</h3>
+                            <p class="book-cover-subtitle">Field Research Procedures</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Data Collection Toolkit</h3>
+                        <p class="book-description">Practical protocols for surveys, interviews, focus groups, and observational studies in development and research contexts.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                86 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/manuals/data_collection_toolkit.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="manual">
+                    <div class="book-cover manual-cover">
+                        <div class="book-cover-pattern"></div>
+                        <div class="book-cover-content">
+                            <span class="book-tag">Manual</span>
+                            <h3 class="book-cover-title">Project Management Guide</h3>
+                            <p class="book-cover-subtitle">From Planning to Closure</p>
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Project Management Guide</h3>
+                        <p class="book-description">A complete reference for managing development projects — covering planning, budgeting, risk management, stakeholder engagement, and closure.</p>
+                        <div class="book-meta">
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                104 pages
+                            </span>
+                            <span class="book-meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                PDF
+                            </span>
+                        </div>
+                        <a href="assets/manuals/project_management_guide.pdf" class="download-btn" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <svg class="footer-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+                <span>My Book Archive</span>
+            </div>
+            <p class="footer-text">Freely sharing knowledge for social impact. All books available as downloadable PDFs.</p>
+            <p class="footer-credit">&copy; 2026 My Book Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 15l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
